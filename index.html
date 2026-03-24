@@ -1162,8 +1162,8 @@ function unlockAudio(){
   if(!actx){try{actx=new(window.AudioContext||window.webkitAudioContext)();}catch(e){}}
   if(actx&&actx.state==='suspended')actx.resume();
 }
-document.addEventListener('pointerdown',unlockAudio,{once:true,capture:true});
-document.addEventListener('keydown',unlockAudio,{once:true,capture:true});
+document.addEventListener('pointerdown',unlockAudio,{capture:true});
+document.addEventListener('keydown',unlockAudio,{capture:true});
 
 // Frequencies for musical notes
 const N={
@@ -1196,7 +1196,7 @@ function tone(freq,startT,dur,vol=0.22,type='sine',envelope=true){
 }
 
 function melody(notes,durs,vol=0.22,type='sine',gap=0.02){
-  const ctx=getActx();let t=ctx.currentTime+0.05;
+  const ctx=getActx();if(!ctx)return;let t=ctx.currentTime+0.05;
   notes.forEach((f,i)=>{
     if(f>0)tone(f,t,durs[i],vol,type);
     t+=durs[i]+gap;
@@ -1205,9 +1205,12 @@ function melody(notes,durs,vol=0.22,type='sine',gap=0.02){
 
 // Chord: multiple notes at same time
 function chord(freqs,dur,vol=0.15,type='sine'){
-  const ctx=getActx();const t=ctx.currentTime+0.05;
+  const ctx=getActx();if(!ctx)return;const t=ctx.currentTime+0.05;
   freqs.forEach(f=>tone(f,t,dur,vol,type));
 }
+
+// Safe currentTime helper
+function now(){const c=getActx();return c?c.currentTime:0;}
 
 const SFX={
   correct(){
@@ -1230,7 +1233,7 @@ const SFX={
   },
   flip(){
     // Soft card click: short percussive tone
-    tone(N.A4,getActx().currentTime,.04,0.12,'square',false);
+    tone(N.A4,now(),.04,0.12,'square',false);
   },
   match(){
     // Satisfying match chord — C major + octave
@@ -1239,11 +1242,11 @@ const SFX={
   },
   tick(){
     // Metronome-style tick for countdown
-    tone(N.A5,getActx().currentTime,.04,0.08,'square',false);
+    tone(N.A5,now(),.04,0.08,'square',false);
   },
   urgentTick(){
     // Fast danger tick when time is low
-    tone(N.C6,getActx().currentTime,.03,0.1,'sawtooth',false);
+    tone(N.C6,now(),.03,0.1,'sawtooth',false);
   },
   gameOver(){
     // Descending sad melody: C5 B4 A4 G4 E4 C4
@@ -1252,7 +1255,7 @@ const SFX={
   countdown(n){
     // n=3,2,1 → different pitch each time
     const pitches=[N.A4,N.B4,N.C5];
-    tone(pitches[3-n]||N.A4,getActx().currentTime,.15,0.22,'sine');
+    tone(pitches[3-n]||N.A4,now(),.15,0.22,'sine');
   },
   go(){
     // "GO!" — upward burst
@@ -2015,12 +2018,13 @@ function toggleMusic(){
 function startBgMusic(){
   if(bgScheduled||!state.musicOn)return;
   bgScheduled=true;
-  const ctx=getActx();
   // Gentle lofi chord loop: Cmaj → Amin → Fmaj → Gmaj, every 2s each
   const chordSeq=[[N.C3,N.E3,N.G3],[N.A3,N.C4,N.E4],[N.F3,N.A3,N.C4],[N.G3,N.B4,N.D4]];
   let idx=0;
   function playNextChord(){
     if(!state.musicOn){bgScheduled=false;return;}
+    const ctx=getActx();
+    if(!ctx){bgScheduled=false;return;}
     const freqs=chordSeq[idx%chordSeq.length];
     freqs.forEach(f=>tone(f,ctx.currentTime,1.8,0.04,'sine'));
     idx++;
