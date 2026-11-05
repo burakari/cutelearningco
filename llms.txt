@@ -1,0 +1,17 @@
+# Cute Learning Co.
+
+> Free learning games for young children. First game: ABC Adventure, a free English alphabet game that runs in the browser.
+
+## ABC Adventure (https://cutelearningco.com/abc/)
+- Price: free. No ads, no in-app purchases, no account.
+- For children getting to know the alphabet (about ages 3 to 7).
+- Teaches the English alphabet. Each of the 26 letters has an animal, a food, a country, a job, a short story, its letter sound and tracing practice.
+- Games: Learn letters: Each letter has an animal, a food, a country, a job, a short story and its sound. Then a five-question quiz.; Speed Race: 60 seconds, three lives and combo points. A fun way to repeat what they know.; Memory Match: Flip the cards and match each letter with its animal.; Word Builder: Spell animal names letter by letter. Short words first, longer ones later.; Big & small: Match big letters with little ones: A with a, G with g.; Adventure Map: A winding trail from A to Z that shows how far they've come.
+- Grown-ups area (behind a maths question): progress report with letter mastery and focus areas, settings, one profile per child. Available in English and Turkish.
+- Progress is stored only in the browser on the device. Works offline after the first visit (installable web app).
+- Words and stories are read aloud with the device's built-in voice.
+
+## Pages
+- English: https://cutelearningco.com/
+- Türkçe: https://cutelearningco.com/tr/
+- Game: https://cutelearningco.com/abc/
