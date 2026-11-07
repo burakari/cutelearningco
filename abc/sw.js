@@ -1,5 +1,5 @@
 // ABC Adventure offline support: the game and its art are cached after the first visit.
-const V='abc-829c7b57a0',CORE=["/abc/", "/abc/art-1.json", "/abc/art-2.json", "/abc/manifest.webmanifest", "/assets/fonts/fredoka.woff2", "/assets/fonts/nunito.woff2", "/assets/fonts/andika.woff2", "/favicon.svg", "/icon-192.png"];
+const V='abc-6841e6513c',CORE=["/abc/", "/abc/art-1.json", "/abc/art-2.json", "/abc/manifest.webmanifest", "/assets/fonts/fredoka.woff2", "/assets/fonts/nunito.woff2", "/assets/fonts/andika.woff2", "/favicon.svg", "/icon-192.png"];
 self.addEventListener('install',e=>e.waitUntil(caches.open(V).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==V).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{const r=e.request,u=new URL(r.url);if(r.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/videos/')||u.pathname.startsWith('/printables/'))return;
