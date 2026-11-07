@@ -1,7 +1,7 @@
 {
  "name": "ABC Adventure",
  "short_name": "ABC Adventure",
- "description": "A free alphabet game for kids by Cute Learning Co.",
+ "description": "Free learning games for kids by Cute Learning Co.: letters, numbers, colors, shapes and Simon Says.",
  "start_url": "/abc/",
  "scope": "/abc/",
  "display": "standalone",

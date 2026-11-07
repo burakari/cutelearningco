@@ -1,17 +1,46 @@
 # Cute Learning Co.
 
-> Free learning games for young children. First game: ABC Adventure, a free English alphabet game that runs in the browser.
+> Free learning games for young children. ABC Adventure is a free browser game for learning the English alphabet, numbers 1 to 20, colors and shapes, with a Simon Says movement game, short videos and printable worksheets.
 
 ## ABC Adventure (https://cutelearningco.com/abc/)
 - Price: free. No ads, no in-app purchases, no account.
-- For children getting to know the alphabet (about ages 3 to 7).
+- For young children (about ages 3 to 7).
 - Teaches the English alphabet. Each of the 26 letters has an animal, a food, a country, a job, a short story, its letter sound and tracing practice.
-- Games: Learn letters: Each letter has an animal, a food, a country, a job, a short story and its sound. Then a five-question quiz.; Speed Race: 60 seconds, three lives and combo points. A fun way to repeat what they know.; Memory Match: Flip the cards and match each letter with its animal.; Word Builder: Spell animal names letter by letter. Short words first, longer ones later.; Big & small: Match big letters with little ones: A with a, G with g.; Adventure Map: A winding trail from A to Z that shows how far they've come.
+- Numbers 1 to 20 with counting, tracing and a quiz; 10 colors and 8 shapes with a find-it game; Simon Says with 14 moves (no camera).
+- Games: Learn letters: Each letter has an animal, a food, a country, a job, a short story and its sound. Then a quick quiz and a new step on the A–Z map.; Numbers 1 to 20: Count pictures out loud, one by one, trace every number and play a number quiz.; Colors & shapes: Ten colors and eight shapes, each with everyday things to spot. Then a find-it game.; Simon Says: Hop, flap, stomp… and freeze! A movement game for wiggly moments. No camera needed.; Video corner: Short videos about letters, counting, colors and shapes. One video at a time, no ads.; Speed Race: 60 seconds, three lives and combo points. A fun way to repeat what they know.; Memory Match: Flip the cards and match each letter with its animal.; Word Builder: Spell animal names letter by letter. Short words first, longer ones later.; Big & small: Match big letters with little ones: A with a, G with g.
 - Grown-ups area (behind a maths question): progress report with letter mastery and focus areas, settings, one profile per child. Available in English and Turkish.
 - Progress is stored only in the browser on the device. Works offline after the first visit (installable web app).
 - Words and stories are read aloud with the device's built-in voice.
+- Video corner: short videos about letters, counting, colors, shapes and Simon Says. One video plays at a time and stops at the end.
+
+## Coloring studio (https://cutelearningco.com/color/)
+- Free online coloring: 96 animal pictures, 16 colors, tap a shape to fill it, then save the picture as an image or print it. No ads, no sign-up; nothing leaves the device. Turkish version: https://cutelearningco.com/tr/boyama/
+
+## Free printables (PDF, A4)
+- ABC trace & color: One page per letter: trace big and small letters, then color the animal. 26 pages. https://cutelearningco.com/printables/abc-trace-and-color.pdf
+- Numbers 1 to 20: Trace each number and its word, count and color the pictures, circle the number. 20 pages. https://cutelearningco.com/printables/numbers-1-to-20.pdf
+- Animal coloring pages: Thirty cute animals to color, from pandas to penguins. Big shapes, easy for small hands. 30 pages. https://cutelearningco.com/printables/coloring-pages.pdf
+- All 101 animal pages: The full coloring set: forest, farm, ocean and safari animals in one printable PDF. 101 pages. https://cutelearningco.com/printables/coloring-all.pdf
+- Animal adventure charts: Check off each animal when you finish coloring it. Nine colorful tracker pages. 9 pages. https://cutelearningco.com/printables/adventure-charts.pdf
+- Animal Explorer certificate: Write your child’s name and print this certificate for a job well done. 1 pages. https://cutelearningco.com/printables/certificate.pdf
 
 ## Pages
+- Coloring (English): https://cutelearningco.com/color/
+- Boyama (Türkçe): https://cutelearningco.com/tr/boyama/
 - English: https://cutelearningco.com/
 - Türkçe: https://cutelearningco.com/tr/
 - Game: https://cutelearningco.com/abc/
+
+## About
+- Cute Learning Co. makes free learning games, coloring and printables for young children. Everything is free; there are no ads, no accounts and no tracking of children. Languages: English and Turkish.
+- Last updated: 2026-11-07
+
+## Contact and social
+- Email: cutelearningco@gmail.com
+- https://www.instagram.com/cutelearningco/
+- https://www.tiktok.com/@cutelearningco
+- https://x.com/cutelearningco
+- https://www.pinterest.com/cutelearningco/
+
+## Citing
+- Please link to the page you used. Facts above (counts of pictures, letters, pages, prices) reflect the live site.
